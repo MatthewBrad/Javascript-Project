@@ -1,0 +1,211 @@
+
+/*The styling below is for the photo slide section at the begin of the page*/
+
+#slide_section{
+  background-color: black;
+  height: 500px;
+  width: 100%;
+  padding-top: 70px;
+}
+
+/*Styling for the buttons under the slide show*/
+
+.slide_button{
+  opacity: 0.6;
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px black;
+  margin-top: 10px;
+  border-radius: 20%;
+  padding: 4px 4px 4px 4px;
+}
+
+.slide_button:hover{
+  opacity: 1;
+  width: 30px;
+  height: 45px;
+}
+
+#left_slide_button{
+  float: left;
+  margin-left: 1%;
+
+}
+
+#right_slide_button{
+  float: right;
+  margin-left: 95%;
+}
+
+/*Styling for the images in the slide show*/
+
+.mySlides{
+  width: 100%;
+}
+
+/*Styling for the who are we section main div*/
+
+#who_div{
+  padding-top: 100px;
+  height: 500px;
+  color: grey;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+/*Styling for the text section of the who are we*/
+
+#who_text{
+  float: left;
+  width: 50%;
+}
+
+#who_text h2{
+  line-height: 40px;
+  border-bottom: 1px solid lightgrey;
+  width: 300px;
+}
+
+.red_line{
+  border-bottom: solid 3px rgb(238,83,79);
+  padding-bottom: 5px;
+}
+
+/*Styling for the photo table in the who are we section*/
+
+#who_pictures{
+  width: 20%;
+  float: right;
+  padding-right: 15%;
+}
+
+#team_pictures td{
+  padding: 5px;
+}
+
+#who_text button{
+  width: 100px;
+  height: 30px;
+  color: grey;
+}
+
+#who_text button:hover{
+  width: 150px;
+  height: 45px;
+}
+
+/*Styling below for the icon section*/
+
+#table_icons{
+  background-color: black;
+  height: 250px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+}
+
+/*Styling for the table of icons and descriptions*/
+
+#table_icon_img{
+  color: white;
+  text-align: center;
+}
+
+#table_icon_title{
+  font-size: 25px;
+}
+
+#table_icon_des{
+  color: grey;
+  letter-spacing: 2px;
+}
+
+/*Styling below for the portfolio table of pictures*/
+
+#port_main{
+  padding-top: 30px;
+  padding-left: 12%;
+  padding-right: 12%;
+  color: grey;
+}
+
+#port_pictures_main{
+  height: 500px;
+}
+
+#port_main h2{
+  line-height: 40px;
+  border-bottom: 1px solid lightgrey;
+  width: 300px;
+}
+
+#table_port_img{
+  float: left;
+  padding-top: 30px;
+  width: 30%;
+}
+
+#table_port_img_main{
+  padding-top: 35px;
+}
+
+/*Styling below for the meet the team section*/
+
+#meet_team_main{
+  height: 650px;
+  padding-top: 10px;
+  padding-left: 12%;
+  padding-right: 12%;
+  color: grey;
+}
+
+#meet_team_main h2{
+  line-height: 40px;
+  border-bottom: 1px solid lightgrey;
+  width: 300px;
+}
+
+#meet_team_main h3,h4,p{
+  padding-left: 20px;
+}
+
+/*Styling below for the social media images in the meet the team funcion*/
+
+#meet_team_table i{
+  padding-left: 10px;
+}
+
+/*Styling below for the counter section*/
+
+#counter_main{
+  background-color: black;
+  height: 200px;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/*Styling below for the counter*/
+
+.counter {
+  display: table-cell;
+  font-size:35px;
+  text-align: left;
+  border-top: solid 2px rgb(238,83,79);
+}
+
+.counter_title{
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left: 0px;
+}
+
+#counter_main td{
+  padding-left: 150px;
+}

@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Contact Page</title>
+
+  <!--Link below for my external styling sheet-->
+
+  <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css">
+
+  <!--Link below for font awesome for the icons used-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--The link below is for my jQuery-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!--I have my internal styling below for this page-->
+
+  <style>
+
+  /*Styling below for the title section of the page*/
+
+  #title_section{
+    height: 150px;
+    background-color: lightgrey;
+    color: grey;
+    text-align: center;
+    padding-top: 90px;
+  }
+
+  #title_section a{
+    text-decoration: none;
+    color: RGB(238,83,79);
+  }
+
+  /*Styling below for the message section of the page*/
+
+  #contact_form{
+    height: 400px;
+    background-color: white;
+    color: grey;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 10px;
+  }
+
+  #form_section{
+    width: 75%;
+    float: left;
+  }
+
+  #form_section input,textarea{
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 6px 6px 6px 6px;
+  }
+
+  #form_section h2{
+    border-bottom: 1px solid lightgrey;
+    width: 300px;
+    padding-bottom: 5px;
+  }
+
+  #form_button{
+    height: 35px;
+    width: 110px;
+    background-color: RGB(238,83,79);
+    border: 1px solid RGB(238,83,79);
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  #form_button:hover{
+    height: 52.5px;
+    width: 170px;
+  }
+
+  /*Contact section of the page to the right hand side*/
+
+  #contact_section{
+    width: 25%;
+    float: right;
+    height: 400px;
+  }
+
+  #contact_section ul li{
+    list-style-type: none;
+    line-height: 30px;
+  }
+
+  #contact_section h2{
+    border-bottom: 1px solid lightgrey;
+    width: 300px;
+    padding-bottom: 5px;
+  }
+
+  /*iframe styling below*/
+
+  iframe{
+    width: 100%;
+    height: 400px;
+    background-color: lightgrey;
+  }
+
+  /*styling below for the small pink line under ther headings*/
+
+  .red_line{
+    border-bottom: solid 3px rgb(238,83,79);
+    padding-bottom: 5px;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="first_div">
+
+    <!--The div below holds the image of the logo-->
+
+    <div id="logo">
+      <img src="C:\Users\Academy10\Desktop\Project 07-11-17\Images\CodeLogo.jpg" alt="Logo" width="200px" height="70px">
+    </div>
+
+    <!--The nav bar is below it holds the tabs for each page: home, service, about and contact-->
+
+    <nav>
+
+      <ul>
+        <li><a href="Home_page.html">HOME</a></li>
+        <li><a href="About_page.html">ABOUT</a></li>
+        <li><a href="Portfolio_page.html">PORTFOLIO</a></li>
+        <li><a href="Courses_page.html">COURSES</a></li>
+        <li><a href="Contact_page.html">CONTACT</a></li>
+      </ul>
+
+    </nav>
+
+    <!--The div below holds the search bar-->
+
+    <form id="search">
+      <input id="s_input" type="text" name="serch" placeholder="search..."><button id="s_button"><img src="C:\Users\Academy10\Desktop\Project 07-11-17\Images\SearchIcon.png" alt="searchButton" width="10px" height="10px"></button>
+    </form>
+
+  </div>
+
+  <!--The section below is the title section at the top of the page-->
+
+  <div id="title_section">
+
+    <h1>CONTACT</h1>
+
+    <p><a href="Home_page.html">HOME</a><i class="fa fa-long-arrow-right"></i>CONTACT</p>
+
+  </div>
+
+  <!--Code below is for the send a message section-->
+
+  <div id="contact_form">
+
+    <div id="form_section">
+
+      <h2><span class="red_line">Send</span> Us a Message</h2>
+
+      <form>
+        <input id="namebox"type="text" placeholder="Your Name">
+        <input id="emailbox" type="email" placeholder="Your Email">
+        <input id="numberbox" type="number" placeholder="Phone Number">
+        <textarea id="messagebox" cols="81" rows="10" placeholder="Your Message"></textarea></br>
+        <input id="form_button" type="submit" placeholder="Send Email">
+      </form>
+
+    </div>
+
+    <div id="contact_section">
+
+      <h2><span class="red_line">Cont</span>act Info</h2>
+
+      <ul>
+        <li><i class="fa fa-phone" style="font-size:15px;color:grey"></i> (021) 685 0991</li>
+        <li><i class="fa fa-envelope" style="font-size:15px;color:grey"></i> info@code4ct.com</li>
+        <li><i class="fa fa-clock-o" style="font-size:15px;color:grey"> Mon-Fri 09:00-17:00</i></li>
+        <li><i class="fa fa-map-marker" style="font-size:15px;color:grey"></i> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <!--The section below holds the link to google maps to display the location-->
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.638062445996!2d18.446525915109074!3d-33.92471368064091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d9854044ed9%3A0x6a0ebf49da5aabab!2sCodeSpace!5e0!3m2!1sen!2sza!4v1510840528452" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+  <!--Footer part below-->
+
+  <footer id="footer_main">
+
+    <!--Table below holds the footer information-->
+
+    <table>
+
+      <!--The row below has the four headings inside-->
+
+      <tr>
+        <td class="table_foot"><h2>Legal</h2></td>
+        <td class="table_foot"><h2>Company</h2></td>
+        <td class="table_foot"><h2>Help & Support</h2></td>
+        <td class="table_foot"><h2>Contact</h2></td>
+      </tr>
+
+      <!--The row below has the info, links and icons inside-->
+
+      <tr>
+
+        <td class="table_foot"><p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338).</p></td>
+
+        <td class="table_foot" id="table_foot_list">
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Blog</li>
+            <li>Testimonials</li>
+            <li>Affiliate program</li>
+          </ul>
+        </td>
+
+        <td class="table_foot" id="table_foot_list">
+          <ul>
+            <li>Help centre</li>
+            <li>Free simple template</li>
+            <li>Refund policy</li>
+            <li>Report span</li>
+          </ul>
+        </td>
+
+        <td class="table_foot" id="table_foot_info">
+          <ul>
+            <li><button><i class="fa fa-phone" style="font-size:15px;color:grey"></i></button> (021) 685 0991</li>
+            <li><button><i class="fa fa-envelope" style="font-size:15px;color:grey"></i></button> info@code4ct.com </li>
+            <li><button><i class="fa fa-map-marker" style="font-size:15px;color:grey"></i></button> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</li>
+          </ul>
+        </td>
+
+      </tr>
+
+    </table>
+
+    <!--The row below has the bottom of the footer inside including the social media accounts and copyright notice-->
+
+    <div id="bottom_footer_bar">
+
+      <p id="bottom_foot_copyr">copyright 2017 PRIVACY POLICY</p>
+
+      <p><a id="bottom_footer_top" class="scrollToTop" href="#">Back to top <i class="fa fa-hand-o-up"></i></a></p>
+
+      <p id="bottom_foot_sm">Follow Us :
+        <a href="https://www.facebook.com/code4ct/" target="_blank" style="color:white"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/code4ct?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" style="color:white"><i class="fa fa-twitter"></i></a>
+        <a href="https://za.linkedin.com/company/code-for-cape-town" target="_blank" style="color:white"><i class="fa fa-linkedin-square"></i></a>
+      </p>
+
+    </div>
+
+  </footer>
+
+  <script>
+
+  //The code below is for the smooth scroll function
+
+  if ($('.scrollToTop')[0]){
+    $('.scrollToTop').click(function(){
+      $('html,body').animate({ scrollTop: 0 }, 3000);
+    });
+  }
+
+  //The code below is using regex to validate the email address
+
+  function ValidateEmail(email) {
+    var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    return expr.test(email);
+  };
+
+  $("#form_button").click(function () {
+    if (!ValidateEmail($("#emailbox").val())) {
+      alert("Invalid email address...");
+    }
+    else {
+      alert("Valid email address, please continue.");
+    }
+  });
+
+  //The script below pops a message up if the fields are not filled
+
+  $(document).ready(function(){
+    $("#form_button").click(function(){
+      var email = $("#emailbox").val();
+      var name = $("#namebox").val();
+      var message = $("#messagebox").val();
+      var number = $("#numberbox").val();
+      if (email == "" || name == "" || message == "" || number == ""){
+        alert("Incomplete text field...");
+      }
+    });
+  });
+
+  </script>
+
+</body>
+
+</html>

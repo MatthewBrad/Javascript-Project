@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Home Page</title>
+
+  <!--Link below for my external styling sheet for my header and footer-->
+
+  <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css">
+
+  <!--Link below for my external styling sheet which is for the carousel and subscribe section-->
+
+  <link rel="stylesheet" type="text/css" href="CSS/Carousel_Subscribe.css">
+
+  <!--Link below for my external styling sheet which is only for this home page-->
+
+  <link rel="stylesheet" type="text/css" href="CSS/Home_Style.css">
+
+  <!--Link below for font awesome for the icons used-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--The link below is for my jQuery-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <Style>
+  /*I have an external styling sheet to make it easier to view my actaul code quickly*/
+  </style>
+
+</head>
+
+<body>
+
+  <!--The second id is for the jump link (id-top)-->
+
+  <div id="first_div">
+
+    <!--The div below holds the image of the logo-->
+
+    <div id="logo">
+      <img src="Images/CodeLogo.jpg" alt="Logo" width="200px" height="70px">
+    </div>
+
+    <!--The nav bar is below it holds the tabs for each page: home, service, about and contact-->
+
+    <nav>
+
+      <ul>
+        <li><a href="Home_page.html">HOME</a></li>
+        <li><a href="About_page.html">ABOUT</a></li>
+        <li><a href="Portfolio_page.html">PORTFOLIO</a></li>
+        <li><a href="Courses_page.html">COURSES</a></li>
+        <li><a href="Contact_page.html">CONTACT</a></li>
+      </ul>
+
+    </nav>
+
+    <!--The div below holds the search bar-->
+
+    <form id="search">
+      <input id="s_input" type="text" name="serch" placeholder="search..."><button id="s_button"><img src="Images/SearchIcon.png" alt="searchButton" width="10px" height="10px"></button>
+    </form>
+
+  </div>
+
+  <!--The div below holds the photo slide section-->
+
+  <div id="slide_section">
+
+    <img class="mySlides" src="Images/slide_picture.jpg" width="100%" height="560px">
+    <img class="mySlides" src="Images/keyboard.jpg" width="100%" height="560px">
+    <img class="mySlides" src="Images/slide_picture2.jpg" width="100%" height="560px">
+    
+    <button class="slide_button" onclick="plusDivs(-1)" id="left_slide_button"><i class="fa fa-angle-double-left" style="font-size:24px"></i></button>
+    <button class="slide_button" onclick="plusDivs(+1)" id="right_slide_button"><i class="fa fa-angle-double-right" style="font-size:24px"></i></button>
+
+  </div>
+
+  <!--There are two divs below holding who are we text and the table of pictures-->
+
+  <!--Main div-->
+  <div id="who_div">
+
+    <!--Content div-->
+    <div id="who_text">
+
+      <h2><span class="red_line">Code </span><span class="grey_line">for Cape Town</span></h2>
+
+      <h3>Who are we?</h3>
+
+      <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
+
+      <p id="more_text"></p>
+
+      <a href="About_page.html"><button>Read More</button></a>
+
+    </div>
+
+    <!--Photo table div with the team pictures inside-->
+
+    <div  id="who_pictures">
+
+      <table>
+
+        <tr>
+          <td><img src="Images/who1.jpg" alt="Emma" width="180px" height="230px"></td>
+          <td><img src="Images/who2.jpg" alt="Andrea" width="180px" height="230px"></td>
+        </tr>
+
+        <tr>
+          <td><img src="Images/who3.jpg" alt="Tegan" width="180px" height="230px"></td>
+          <td><img src="Images/who5.jpg" alt="Tracy" width="180px" height="230px"></td>
+        </tr>
+
+      </table>
+
+    </div>
+
+  </div>
+
+  <!--The section below holds the three things that code4ct do-->
+
+  <section id="table_icons">
+
+    <!--The table below has the three items and images and descriptions inside: Web design, Print template, photography-->
+
+    <table id="table_icon_img">
+
+      <!--This row holds all the icons/images-->
+
+      <tr>
+        <td><i class="fa fa-desktop" style="font-size:55px;color:RGB(238,83,79)"></td>
+          <td><i class="fa fa-volume-up" style="font-size:55px;color:RGB(238,83,79)"></td>
+            <td><i class="fa fa-wrench" style="font-size:55px;color:RGB(238,83,79)"></i></td>
+          </tr>
+
+          <!--This row holds all the headings-->
+
+          <tr id="table_icon_title">
+            <td>Coding</td>
+            <td>Communication</td>
+            <td>Problem Solving</td>
+          </tr>
+
+          <!--This row holds all the descriptions-->
+
+          <tr id="table_icon_des">
+            <td>Learn how to build your own websites using HTML, CSS, JavaScript and JQuery. Go on to explore exciting modules from game development to user experience design.</td>
+            <td>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</td>
+            <td>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.</td>
+          </tr>
+
+        </table>
+
+      </section>
+
+      <!--The div below holds the section with the portfolio and text in it-->
+
+      <div id="port_main">
+
+        <h2><span class="red_line">Our </span>Awesome Portfolio</h2>
+
+        <p>Over the past 3 years, Code for Cape Town has reached over 600 young women with coding and social innovation. Not only have they been exposed to coding but they have also done careers and life skills courses, design thinking workshops and social innovation projects to address local challenges.</p>
+
+        <!--The div below holds the portfolio images-->
+
+        <div  id="port_pictures_main">
+
+          <table id="table_port_img">
+
+            <tr>
+              <td><img src="Images/port1.jpg" alt="port1" width="200px" height="185px"></td>
+              <td><img src="Images/port2.jpg" alt="port2" width="200px" height="185px"></td>
+            </tr>
+
+            <tr>
+              <td><img src="Images/port3.jpg" alt="port3" width="200px" height="185px"></td>
+              <td><img src="Images/port4.jpg" alt="port4" width="200px" height="185px"></td>
+            </tr>
+
+          </table>
+
+          <img id="table_port_img_main" src="Images/slide3.jpg" alt="port5" width="550px" height="375px">
+
+        </div>
+
+      </div>
+
+      <!--Meet the team section below-->
+
+      <section id="meet_team_main">
+
+        <div>
+
+          <h2><span class="red_line">Meet </span>Our Team</h2>
+
+          <p>...</p>
+
+        </div>
+
+        <!--The div below is to serperate the heading and paragraph above to the table of info and pictures below-->
+
+        <div>
+
+          <!--Table below holds the pictures of the team and there positions and abit of there story-->
+
+          <table id="meet_team_table">
+
+            <tr>
+
+              <td><img src="Images/Emma1.jpg" alt="Emma" width="180px" height="230px"></td>
+              <td>
+                <h3>Emma Dicks</h3>
+                <h4>Founder and Director</h4>
+                <p>Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.</p>
+              </td>
+
+              <td><img src="Images/Andrea1.jpg" alt="Andrea" width="180px" height="230px"></td>
+
+              <td>
+                <h3>Andrea Petersen</h3>
+                <h4>Operations Lead</h4>
+                <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.</p>
+              </td>
+
+            </tr>
+
+            <tr>
+
+              <td><img src="Images/Tegan1.jpg" alt="Tegan" width="180px" height="230px"></td>
+
+              <td>
+                <h3>Tegan Crous</h3>
+                <h4>Program Lead</h4>
+                <p>Tegan heads up the high school program. She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment.</p>
+              </td>
+
+              <td><img src="Images/Tracy1.jpg" alt="Tracy" width="180px" height="230px"></td>
+
+              <td>
+                <h3>Tracy-Anne Sikenjana</h3>
+                <h4>Leadership Program Manager</h4>
+                <p>Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls’ High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p>
+              </td>
+
+            </tr>
+
+          </table>
+
+        </div>
+
+      </section>
+
+      <!--The div below holds the counter section that has numbers that count up from 0 when refreshed-->
+
+      <div id="counter_main">
+
+        <table>
+
+          <tr>
+
+            <td><div class="counter" data-count="3000">0</div></td>
+            <td><div class="counter" data-count="700">0</div></td>
+            <td><div class="counter" data-count="3120">0</div></td>
+            <td><div class="counter" data-count="8765">0</div></td>
+
+          </tr>
+
+          <tr>
+
+            <td><p class="counter_title">Cups of coffee</p></td>
+            <td><p class="counter_title">Number of girls</p></td>
+            <td><p class="counter_title">Projects completed</p></td>
+            <td><p class="counter_title">Hours of coding</p></td>
+
+          </tr>
+
+        </table>
+
+      </div>
+
+      <!--The section below holds the subscribe part of the page-->
+
+      <div id="contact_form">
+
+        <h2><i class="fa fa-paper-plane" style="font-size:20px;color:RGB(238,83,79)"></i>&nbsp;&nbsp;SUBSCRIBE TO US</h2>
+
+        <p>We equip high potential female learners with the coding, problem solving and life skills that will allow them to leverage technology to contribute meaningfully to South Africa’s innovation system. The program exposes young women to how technology can be used for social innovation and helps them navigate critical study decisions.</p>
+
+        <input type="email" placeholder="enter your email"><button>Submit</button>
+
+      </div>
+
+      <!--The section below holds the logo icond which are in an automatic slide-->
+
+      <div id="carousel_container">
+
+        <div id="carousel_inner">
+
+          <!--I have all 9 logo icons below such as takealot-->
+
+          <ul id="carousel_ul">
+            <li><img src="Images/logo1.jpg" alt="icon" width="300px" height="150px"></li>
+            <li><img src="Images/logo2.jpg" alt="icon" width="300px" height="150px"></li>
+            <li><img src="Images/logo3.jpg" alt="icon" width="300px" height="150px"></li>
+            <li><img src="Images/logo4.jpg" alt="icon" width="300px" height="150px"></li>
+            <li><img src="Images/logo5.jpg" alt="icon" width="300px" height="150px"></li>
+            <li><img src="Images/logo6.jpg" alt="icon" width="300px" height="150px"></li>
+            <li><img src="Images/logo7.jpg" alt="icon" width="300px" height="150px"></li>
+            <li><img src="Images/logo8.jpg" alt="icon" width="300px" height="150px"></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <footer id="footer_main">
+
+        <!--Table below holds the footer information-->
+
+        <table>
+
+          <!--The row below has the four headings inside-->
+
+          <tr>
+            <td class="table_foot"><h2>Legal</h2></td>
+            <td class="table_foot"><h2>Company</h2></td>
+            <td class="table_foot"><h2>Help & Support</h2></td>
+            <td class="table_foot"><h2>Contact</h2></td>
+          </tr>
+
+          <!--The row below has the info, links and icons inside-->
+
+          <tr>
+
+            <td class="table_foot"><p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338).</p></td>
+
+            <td class="table_foot" id="table_foot_list">
+              <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Blog</li>
+                <li>Testimonials</li>
+                <li>Affiliate program</li>
+              </ul>
+            </td>
+
+            <td class="table_foot" id="table_foot_list">
+              <ul>
+                <li>Help centre</li>
+                <li>Free simple template</li>
+                <li>Refund policy</li>
+                <li>Report span</li>
+              </ul>
+            </td>
+
+            <td class="table_foot" id="table_foot_info">
+              <ul>
+                <li><button><i class="fa fa-phone" style="font-size:15px;color:grey"></i></button> (021) 685 0991</li>
+                <li><button><i class="fa fa-envelope" style="font-size:15px;color:grey"></i></button> info@code4ct.com </li>
+                <li><button><i class="fa fa-map-marker" style="font-size:15px;color:grey"></i></button> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</li>
+              </ul>
+            </td>
+
+          </tr>
+
+        </table>
+
+        <!--The row below has the bottom of the footer inside including the social media accounts and copyright notice-->
+
+        <div id="bottom_footer_bar">
+
+          <p id="bottom_foot_copyr">copyright 2017 PRIVACY POLICY</p>
+
+          <p><a id="bottom_footer_top" class="scrollToTop" href="#">Back to top <i class="fa fa-hand-o-up"></i></a></p>
+
+          <p id="bottom_foot_sm">Follow Us :
+            <a href="https://www.facebook.com/code4ct/" target="_blank" style="color:white"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/code4ct?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" style="color:white"><i class="fa fa-twitter"></i></a>
+            <a href="https://za.linkedin.com/company/code-for-cape-town" target="_blank" style="color:white"><i class="fa fa-linkedin-square"></i></a>
+          </p>
+
+        </div>
+
+      </footer>
+
+      <script>
+
+      //Javascript for the slide show at the top of the page below the nav bar
+
+      var slideIndex = 1; //slideIndex is set to 1 which is our first picture
+      showDivs(slideIndex); //showDivs is called to display first image
+
+      function plusDivs(n){ //This function is called when a user clicks one of the buttons
+        showDivs(slideIndex += n); //It adds one or subtracts one to the slideIndex
+      }
+
+      function showDivs(n) { //This function hides elements with the class mySlides and also displays the relevant image
+
+        var i;
+        var x = document.getElementsByClassName('mySlides');
+
+        if (n > x.length) {slideIndex=1}
+        if (n < 1) {slideIndex = x.length}
+
+        for (i = 0; i < x.length; i++){
+          x[i].style.display = "none";
+        }
+
+        x[slideIndex-1].style.display = "block";
+      }
+
+      //Code below for the read more button
+
+      $("#read_more").click(function(){
+        $("#more_text").append("These are skills that everyone should have. Even if you have no intention of becoming a professional coder, you will benefit from knowing how to think in this way in this increasingly computerized economy. A growing number of permanent job positions that use information technology to deliver a product or a service are becoming available in the local economy.");
+      });
+
+      //I have jQuery below that allows me to count from zero until the number i want is to stop at
+
+      $('.counter').each(function() {
+        var $this = $(this),
+        countTo = $this.attr('data-count');
+
+        $({ countNum: $this.text()}).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 9000,
+          easing:'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum ) + "+");
+          },
+          complete: function() {
+            $this.text(this.countNum  + "+");
+          }
+
+        });
+      });
+
+      //Script below for the carousel
+
+      $(document).ready(function() {
+
+        //options( 1 - ON , 0 - OFF)
+        var auto_slide = 1;
+        var hover_pause = 1;
+        var key_slide = 1;
+
+        //speed of auto slide(
+        var auto_slide_seconds = 0;
+        /* IMPORTANT: i know the variable is called ...seconds but it's
+        in milliseconds ( multiplied with 1000) '*/
+
+        /*move the last list item before the first item. The purpose of this is
+        if the user clicks to slide left he will be able to see the last item.*/
+        $('#carousel_ul li:first').before($('#carousel_ul li:last'));
+
+        //check if auto sliding is enabled
+        if(auto_slide == 1){
+          /*set the interval (loop) to call function slide with option 'right'
+          and set the interval time to the variable we declared previously */
+          var timer = setInterval('slide("right")', auto_slide_seconds);
+
+          /*and change the value of our hidden field that hold info about
+          the interval, setting it to the number of milliseconds we declared previously*/
+          $('#hidden_auto_slide_seconds').val(auto_slide_seconds);
+        }
+
+        //check if hover pause is enabled
+        if(hover_pause == 1){
+          //when hovered over the list
+          $('#carousel_ul').hover(function(){
+            //stop the interval
+            clearInterval(timer)
+          },function(){
+            //and when mouseout start it again
+            timer = setInterval('slide("right")', auto_slide_seconds);
+          });
+
+        }
+
+        //check if key sliding is enabled
+        if(key_slide == 1){
+
+          //binding keypress function
+          $(document).bind('keypress', function(e) {
+            //keyCode for left arrow is 37 and for right it's 39 '
+            if(e.keyCode==37){
+              //initialize the slide to left function
+              slide('left');
+            }else if(e.keyCode==39){
+              //initialize the slide to right function
+              slide('right');
+            }
+          });
+
+        }
+
+      });
+
+      //FUNCTIONS BELLOW
+
+      //slide function
+      function slide(where){
+
+        //get the item width
+        var item_width = $('#carousel_ul li').outerWidth() + 10;
+
+        /* using a if statement and the where variable check
+        we will check where the user wants to slide (left or right)*/
+        if(where == 'left'){
+          //...calculating the new left indent of the unordered list (ul) for left sliding
+          var left_indent = parseInt($('#carousel_ul').css('left')) + item_width;
+        }else{
+          //...calculating the new left indent of the unordered list (ul) for right sliding
+          var left_indent = parseInt($('#carousel_ul').css('left')) - item_width;
+
+        }
+
+        //make the sliding effect using jQuery's animate function... '
+        $('#carousel_ul:not(:animated)').animate({'left' : left_indent},4000,function(){
+
+          /* when the animation finishes use the if statement again, and make an ilussion
+          of infinity by changing place of last or first item*/
+          if(where == 'left'){
+            //...and if it slided to left we put the last item before the first item
+            $('#carousel_ul li:first').before($('#carousel_ul li:last'));
+          }else{
+            //...and if it slided to right we put the first item after the last item
+            $('#carousel_ul li:last').after($('#carousel_ul li:first'));
+          }
+
+          //...and then just get back the default left indent
+          $('#carousel_ul').css({'left' : '-210px'});
+        });
+      }
+
+      //The code below is for the smooth scroll function
+
+      if ($('.scrollToTop')[0]){
+        $('.scrollToTop').click(function(){
+          $('html,body').animate({ scrollTop: 0 }, 3000);
+        });
+      }
+
+      </script>
+
+    </body>
+
+    </html>

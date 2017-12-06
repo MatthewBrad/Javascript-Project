@@ -1,0 +1,145 @@
+/*Font for every page*/
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Styling below for the first div that holds the logo, navbar and the searchbar*/
+
+#first_div{
+  background-color: white;
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/*Styling below for the logo, search bar and navbar*/
+
+#logo{
+  float: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+#search{
+  float: right;
+  padding-top: 25px;
+  padding-left: 60px;
+  padding-right: 20px;
+}
+
+/*Styling below to turn the list into a navbar*/
+
+nav{
+  float: left;
+}
+
+nav ul{
+  list-style-type: none;
+  padding-left: 170px;
+  padding-top: 10px;
+}
+
+nav li{
+  display: inline;
+  background-color: white;
+}
+
+nav li a{
+  font-size: 20px;
+  text-decoration: none;
+  color: grey;
+  padding: 15px;
+}
+
+nav li a:hover{
+  color: #E55451; /*Valentine red*/
+}
+
+/*Styling below for the input field in the search section*/
+
+#search{
+  padding-top: 30px;
+}
+
+/*Styling below for the footer of the page*/
+
+#footer_main{
+  height: 300px;
+  background-color: white;
+  color: grey;
+  letter-spacing: 0.5px;
+}
+
+#footer_main p{
+  padding-left: 0px;
+}
+
+#footer_main table{
+  padding-left: 10%;
+  padding-right: 12%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+
+#footer_main td{
+  padding-left: 50px;
+}
+
+.table_foot{
+  width: 25%;
+  text-align: left;
+}
+
+#bottom_footer_bar{
+  background-color: RGB(238,83,79);
+  color: white;
+  height: 45px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+#bottom_foot_copyr{
+  float: left;
+  margin-left: 50px;
+}
+
+/*Styling for the social media section below*/
+
+#bottom_foot_sm{
+  padding-right: 50px;
+  float: right;
+}
+
+#bottom_foot_sm i{
+  padding-left: 5px;
+}
+
+#bottom_footer_top{
+  float: left;
+  padding-left: 280px;
+  padding-top: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#table_foot_info ul{
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+#table_foot_info button:hover{
+  border-color: RGB(238,83,79);
+}
+
+#table_foot_info button{
+  width: 25px;
+  height: 25px;
+  padding: 2px 2px 2px 2px;
+}
+
+#table_foot_list li{
+  list-style: square;
+}

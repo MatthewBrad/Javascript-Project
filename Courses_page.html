@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Courses</title>
+
+  <!--Link below for my external styling sheet-->
+
+  <link rel="stylesheet" type="text/css" href="CSS/Header_Footer.css">
+
+  <!--Link below for font awesome for the icons used-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--The link below is for my jQuery-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <style>
+
+  /*Styling for the main div that the course div sit inside*/
+
+  #main_course{
+    height: 600px;
+    padding-top: 120px;
+    letter-spacing: 1px;
+  }
+
+  /*Styling below for the div's the course are held in*/
+
+  .course_div{
+    background-color: grey;
+    width: 17%;
+    height: 270px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+
+  .course_div button{
+    background-color: lightgrey;
+    color: red;
+    border-radius: 10px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  /*Styling below for the courses to take up the left hand side of the page*/
+
+  #course_container{
+    float: left;
+    width: 70%;
+  }
+
+  /*Styling below for the course cart*/
+
+  #course_cart{
+    background-color: grey;
+    float: right;
+    width: 25%;
+    height: 585px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+  }
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="first_div">
+
+    <!--The div below holds the image of the logo-->
+
+    <div id="logo">
+      <img src="C:\Users\Academy10\Desktop\Project 07-11-17\Images\CodeLogo.jpg" alt="Logo" width="200px" height="70px">
+    </div>
+
+    <!--The nav bar is below it holds the tabs for each page: home, service, about and contact-->
+
+    <nav>
+
+      <ul>
+        <li><a href="Home_page.html">HOME</a></li>
+        <li><a href="About_page.html">ABOUT</a></li>
+        <li><a href="Portfolio_page.html">PORTFOLIO</a></li>
+        <li><a href="Courses_page.html">COURSES</a></li>
+        <li><a href="Contact_page.html">CONTACT</a></li>
+      </ul>
+
+    </nav>
+
+    <!--The div below holds the search bar-->
+
+    <form id="search">
+      <input id="s_input" type="text" name="serch" placeholder="search..."><button id="s_button"><img src="C:\Users\Academy10\Desktop\Project 07-11-17\Images\SearchIcon.png" alt="searchButton" width="10px" height="10px"></button>
+    </form>
+
+  </div>
+
+  <!--The code below is for the three divs holding seperate divs-->
+
+  <div id="main_course">
+
+    <div id="course_container">
+
+      <div id="course_one" class="course_div">
+      </div>
+
+      <div id="course_two" class="course_div">
+      </div>
+
+      <div id="course_three" class="course_div">
+      </div>
+
+      <div id="course_four" class="course_div">
+      </div>
+
+      <div id="course_five" class="course_div">
+      </div>
+
+      <div id="course_six" class="course_div">
+      </div>
+
+      <div id="course_seven" class="course_div">
+      </div>
+
+    </div>
+
+    <aside id="course_cart">
+
+      <i class="fa fa-cart-plus" style="font-size:36px"></i>
+
+      <h3>Courses seleted:</h3>
+
+      <h4 id="total"></h4>
+
+    </aside>
+
+  </div>
+
+  <footer id="footer_main">
+
+    <!--Table below holds the footer information-->
+
+    <table>
+
+      <!--The row below has the four headings inside-->
+
+      <tr>
+        <td class="table_foot"><h2>Legal</h2></td>
+        <td class="table_foot"><h2>Company</h2></td>
+        <td class="table_foot"><h2>Help & Support</h2></td>
+        <td class="table_foot"><h2>Contact</h2></td>
+      </tr>
+
+      <!--The row below has the info, links and icons inside-->
+
+      <tr>
+
+        <td class="table_foot"><p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338).</p></td>
+
+        <td class="table_foot" id="table_foot_list">
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Blog</li>
+            <li>Testimonials</li>
+            <li>Affiliate program</li>
+          </ul>
+        </td>
+
+        <td class="table_foot" id="table_foot_list">
+          <ul>
+            <li>Help centre</li>
+            <li>Free simple template</li>
+            <li>Refund policy</li>
+            <li>Report span</li>
+          </ul>
+        </td>
+
+        <td class="table_foot" id="table_foot_info">
+          <ul>
+            <li><button><i class="fa fa-phone" style="font-size:15px;color:grey"></i></button> (021) 685 0991</li>
+            <li><button><i class="fa fa-envelope" style="font-size:15px;color:grey"></i></button> info@code4ct.com </li>
+            <li><button><i class="fa fa-map-marker" style="font-size:15px;color:grey"></i></button> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</li>
+          </ul>
+        </td>
+
+      </tr>
+
+    </table>
+
+    <!--The row below has the bottom of the footer inside including the social media accounts and copyright notice-->
+
+    <div id="bottom_footer_bar">
+
+      <p id="bottom_foot_copyr">copyright 2017 PRIVACY POLICY</p>
+
+      <p><a id="bottom_footer_top" class="scrollToTop" href="#">Back to top <i class="fa fa-hand-o-up"></i></a></p>
+
+      <p id="bottom_foot_sm">Follow Us :
+        <a href="https://www.facebook.com/code4ct/" target="_blank" style="color:white"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/code4ct?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" style="color:white"><i class="fa fa-twitter"></i></a>
+        <a href="https://za.linkedin.com/company/code-for-cape-town" target="_blank" style="color:white"><i class="fa fa-linkedin-square"></i></a>
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!--I have my script tags below holding all functionality code-->
+
+  <script>
+
+  //script below for the courses
+
+  //I have made a constructor object below
+
+  function course(name, duration, cost){
+    this.name = name;
+    this.duration = duration;
+    this.cost = cost;
+  }
+
+  var courseOne = new course ("Intro to Coding: Web Pages","3 hours","250");
+  var courseTwo = new course ("Intro to Coding: Music","3 hours","250");
+  var courseThree = new course ("Intro to Coding: Animation","3 hours", "250");
+  var courseFour = new course ("Create with Code: Web Pages","3 days", "960");
+  var courseFive = new course ("Create with Code: Music","3 days", "960");
+  var courseSix = new course ("Create with Code: Animation","3 days", "960");
+  var courseSeven = new course ("Getting started as a developer","3 hours", "250");
+
+  //I want to print out the course info in the html document
+
+  document.getElementById("course_one").innerHTML = "<p>Course name - " + courseOne.name + "</p>" + "<p>Duration - " + courseOne.duration + "</p>" + "<p>Cost - " + courseOne.cost + "</p>" + "<button id='course_one_button' value='250'>+</button>" + "<button id='course_one_min' value='-250'>-</button>";
+
+  document.getElementById("course_two").innerHTML = "<p>Course name - " + courseTwo.name + "</p>" + "<p>Duration - " + courseTwo.duration + "</p>" + "<p>Cost - " + courseTwo.cost + "</p>" + "<button id='course_two_button' value='250'>+</button>" + "<button id='course_two_min' value='-250'>-</button>";
+
+  document.getElementById("course_three").innerHTML = "<p>Course name - " + courseThree.name + "</p>" + "<p>Duration - " + courseThree.duration + "</p>" + "<p>Cost - " + courseThree.cost + "</p>" + "<button id='course_three_button' value='250'>+</button>" + "<button id='course_three_min' value='-250'>-</button>";
+
+  document.getElementById("course_four").innerHTML = "<p>Course name - " + courseFour.name + "</p>" + "<p>Duration - " + courseFour.duration + "</p>" + "<p>Cost - " + courseFour.cost + "</p>" + "<button id='course_four_button' value='960'>+</button>" + "<button id='course_four_min' value='-960'>-</button>";
+
+  document.getElementById("course_five").innerHTML = "<p>Course name - " + courseFive.name + "</p>" + "<p>Duration - " + courseFive.duration + "</p>" + "<p>Cost - " + courseFive.cost + "</p>" + "<button id='course_five_button' value='960'>+</button>" + "<button id='course_five_min' value='-960'>-</button>";
+
+  document.getElementById("course_six").innerHTML = "<p>Course name - " + courseSix.name + "</p>" + "<p>Duration - " + courseSix.duration + "</p>" + "<p>Cost - " + courseSix.cost + "</p>" + "<button id='course_six_button' value='960'>+</button>" + "<button id='course_six_min' value='-960'>-</button>";
+
+  document.getElementById("course_seven").innerHTML = "<p>Course name - " + courseSeven.name + "</p>" + "<p>Duration - " + courseSeven.duration + "</p>" + "<p>Cost - " + courseSeven.cost + "</p>" + "<button id='course_seven_button' value='250'>+</button>" + "<button id='course_seven_min' value='-250'>-</button>";
+
+  //I now need to add a course the the cart when clicking button, ive used jQuery and a function for each button
+
+  $(document).ready(function(){
+    $("#course_one_button").click(function(){
+      $("<p id='first_text'>Web Page Intro - 250</p>").appendTo("aside");
+    });
+
+    $("#course_two_button").click(function(){
+      $("<p id='second_text'>Music Intro - 250</p>").appendTo("aside");
+    });
+
+    $("#course_three_button").click(function(){
+      $("<p id='third_text'>Animation Intro - 250</p>").appendTo("aside");
+    });
+
+    $("#course_four_button").click(function(){
+      $("<p id='four_text'>Create with Code: Web Pages - 960</p>").appendTo("aside");
+    });
+
+    $("#course_five_button").click(function(){
+      $("<p id='five_text'>Create with Code: Music - 960</p>").appendTo("aside");
+    });
+
+    $("#course_six_button").click(function(){
+      $("<p id='six_text'>Create with Code: Animation - 960</p>").appendTo("aside");
+    });
+
+    $("#course_seven_button").click(function(){
+      $("<p id='seven_text'>Getting started as a developer - 250</p>").appendTo("aside");
+    });
+
+  });
+
+  //Now i need to be able to remove the courses from the cart
+
+  $(document).ready(function(){
+    $("#course_one_min").click(function(){
+      $("#first_text").remove();
+    });
+
+    $("#course_two_min").click(function(){
+      $("#second_text").remove();
+    });
+
+    $("#course_three_min").click(function(){
+      $("#third_text").remove();
+    });
+
+    $("#course_four_min").click(function(){
+      $("#four_text").remove();
+    });
+
+    $("#course_five_min").click(function(){
+      $("#five_text").remove();
+    });
+
+    $("#course_six_min").click(function(){
+      $("#six_text").remove();
+    });
+
+    $("#course_seven_min").click(function(){
+      $("#seven_text").remove();
+    });
+  });
+
+  //I have the function below that will allow me to have a total in the basket/cart
+
+  function addition(){
+    var theTotal = 0;
+    $("#total").text("Total: R "+theTotal+".00");
+
+    $("button").click(function(){
+      $("#total").text("Total: R "+theTotal+".00");
+
+      theTotal = Number(theTotal) + Number($(this).val());
+      $("#total").text("Total: R "+theTotal+".00");
+    });
+  };
+addition();
+
+  //The code below is for the smooth scroll function
+
+  if ($('.scrollToTop')[0]){
+    $('.scrollToTop').click(function(){
+      $('html,body').animate({ scrollTop: 0 }, 3000);
+    });
+  }
+
+  </script>
+
+</body>
+
+</html>
